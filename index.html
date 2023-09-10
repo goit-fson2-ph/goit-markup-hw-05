@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Cyfred Go-IT-Markup Homework 4</title>
-    <meta name="description" content="Cyfred Go-IT-Markup Homework 4">
+    <title>Cyfred Go-IT-Markup Homework 5</title>
+    <meta name="description" content="Cyfred Go-IT-Markup Homework 5">
     <meta charset="utf-8">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +51,7 @@
             Effective Solutions <br>
             for Your Business
           </h1>
-          <button class="section-hero-button" type="button">Order Service</button>
+          <button class="section-hero-button" type="button" data-modal-open>Order Service</button>
         </div>  
       </section>
 
@@ -328,7 +328,7 @@
               </li>
             </ul>
         </div>
-      </section>            
+      </section>         
     </main>
     <!-- Footer Section -->
     <footer class="footer">
@@ -376,7 +376,19 @@
                   </li>
               </ul>
           </div>
-        </div>
+        </div> 
     </footer>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./icon.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
