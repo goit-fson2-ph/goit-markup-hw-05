@@ -105,6 +105,10 @@ address{
   color: var(--ocean);
 }
 
+.nav-list-item:hover .nav-list-item-link{
+  color: var(--ocean);
+}
+
 .address-list{
   display: flex;
   gap: 40px;
@@ -383,14 +387,17 @@ address{
 
 .section-projects-list{
   display: flex;
-  gap: 8px;
   flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 24px;
+  row-gap: 48px;
+
 }
 
 /* hm5 */
 .projects-list-item{
   position: relative;
-  border: 1px solid var(--cornflower);
+  
   background: var(--white);
   overflow: hidden;
 }
@@ -423,7 +430,6 @@ address{
   transform: translateY(100%); 
   will-change: transform;
 
-
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5em; 
@@ -431,12 +437,16 @@ address{
 }
 
 .projects-list-item:hover{
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+              0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+              0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  border: 1px solid var(--cloud);
 }
 
-.projects-list-item:nth-child(n+4) {
-  margin-top: 48px; 
+.projects-list-item:hover .project-item-details{
+  border: unset;
 }
+
 
 .project-item-text-project-name{
   margin-bottom: 8px;
@@ -444,6 +454,8 @@ address{
 
 .project-item-details{
   padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: unset;
 }
 
 .portfolio-item-button {
